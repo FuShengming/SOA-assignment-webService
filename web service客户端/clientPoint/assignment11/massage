@@ -1,0 +1,945 @@
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+    <S:Fault>
+      <faultcode>S:Server</faultcode>
+      <faultstring>cn.edu.nju.jw.wsdl.CannotFindFault</faultstring>
+      <detail xmlns="" xmlns:faultReason="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+        <faultReason:faultReason>Cannot Find</faultReason:faultReason>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>addInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>deleteInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+    <S:Fault>
+      <faultcode>S:Server</faultcode>
+      <faultstring>cn.edu.nju.jw.wsdl.CannotFindFault</faultstring>
+      <detail xmlns="" xmlns:faultReason="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+        <faultReason:faultReason>Cannot Find</faultReason:faultReason>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>modifyInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+    <S:Fault>
+      <faultcode>S:Server</faultcode>
+      <faultstring/>
+      <detail xmlns="" xmlns:faultReason="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+        <faultReason:faultReason>Cannot Find</faultReason:faultReason>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>addInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>addInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+    <S:Fault>
+      <faultcode>S:Server</faultcode>
+      <faultstring>cn.edu.nju.jw.wsdl.AlreadyExistFault</faultstring>
+      <detail xmlns="" xmlns:faultReason="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+        <faultReason:faultReason>Already Exist</faultReason:faultReason>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>171250640@smail.nju.edu.cn</ns2:邮箱>
+      <ns2:密码>171250640</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>171250640@smail.nju.edu.cn</邮箱>
+      <身份>本科生</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>171250640@smail.nju.edu.cn</email>
+    <password>171250640</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchRequest>171250640</searchRequest>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchResponse/>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>171250640@smail.nju.edu.cn</ns2:邮箱>
+      <ns2:密码>171250640</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>171250640@smail.nju.edu.cn</邮箱>
+      <身份>本科生</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>171250640@smail.nju.edu.cn</ns2:邮箱>
+      <ns2:密码>171250640</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>171250640@smail.nju.edu.cn</邮箱>
+      <身份>本科生</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>171250640@smail.nju.edu.cn</ns2:邮箱>
+      <ns2:密码>171250640</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>171250640@smail.nju.edu.cn</邮箱>
+      <身份>本科生</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>123456@nju.edu.cn</ns2:邮箱>
+      <ns2:密码>123456</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>123456@nju.edu.cn</邮箱>
+      <身份>老师</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>123456@nju.edu.cn</email>
+    <password>123456</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <addRequest>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>90</得分>
+        </成绩>
+      </课程成绩>
+    </addRequest>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>123456@nju.edu.cn</ns2:邮箱>
+      <ns2:密码>123456</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>123456@nju.edu.cn</邮箱>
+      <身份>老师</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>123456@nju.edu.cn</email>
+    <password>123456</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchRequest>171250640</searchRequest>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchResponse>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>90</得分>
+        </成绩>
+      </课程成绩>
+    </searchResponse>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>modifyInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>90</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>90</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <addResponse>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>90</得分>
+        </成绩>
+      </课程成绩>
+    </addResponse>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>90</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>171250640@smail.nju.edu.cn</ns2:邮箱>
+      <ns2:密码>171250640</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>171250640@smail.nju.edu.cn</邮箱>
+      <身份>本科生</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>171250640@smail.nju.edu.cn</email>
+    <password>171250640</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchRequest>171250640</searchRequest>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchResponse>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>90</得分>
+        </成绩>
+      </课程成绩>
+    </searchResponse>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>123456@nju.edu.cn</ns2:邮箱>
+      <ns2:密码>123456</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>123456@nju.edu.cn</邮箱>
+      <身份>老师</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>123456@nju.edu.cn</email>
+    <password>123456</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <modifyRequest>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>60</得分>
+        </成绩>
+      </课程成绩>
+    </modifyRequest>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>123456@nju.edu.cn</ns2:邮箱>
+      <ns2:密码>123456</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>123456@nju.edu.cn</邮箱>
+      <身份>老师</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>123456@nju.edu.cn</email>
+    <password>123456</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchRequest>171250640</searchRequest>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchResponse>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>60</得分>
+        </成绩>
+      </课程成绩>
+    </searchResponse>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>90</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>modifyInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>60</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>60</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <modifyResponse>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>60</得分>
+        </成绩>
+      </课程成绩>
+    </modifyResponse>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>123456@nju.edu.cn</ns2:邮箱>
+      <ns2:密码>123456</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>123456@nju.edu.cn</邮箱>
+      <身份>老师</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>123456@nju.edu.cn</email>
+    <password>123456</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <deleteRequest>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>60</得分>
+        </成绩>
+      </课程成绩>
+    </deleteRequest>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema" xmlns:ns3="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <ns2:EmailAuthenticationInfo>
+      <ns2:邮箱>123456@nju.edu.cn</ns2:邮箱>
+      <ns2:密码>123456</ns2:密码>
+    </ns2:EmailAuthenticationInfo>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <soap:Body xmlns="http://www.nju.edu.cn/schema" xmlns:ns2="http://jw.nju.edu.cn/wsdl/fault" xmlns:ns3="http://jw.nju.edu.cn/schema" xmlns:ns4="http://www.nju.edu.cn/security/schema">
+    <EmailAuthenticationResult>
+      <邮箱>123456@nju.edu.cn</邮箱>
+      <身份>老师</身份>
+    </EmailAuthenticationResult>
+  </soap:Body>
+</soap:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header xmlns="http://www.nju.edu.cn/schema">
+    <email>123456@nju.edu.cn</email>
+    <password>123456</password>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchRequest>171250640</searchRequest>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <searchResponse/>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表>
+        <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+          <成绩>
+            <学号>171250640</学号>
+            <得分>60</得分>
+          </成绩>
+        </课程成绩>
+      </课程成绩列表>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>modifyInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学生 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </学生>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <deleteResponse>
+      <课程成绩 成绩性质="平时成绩" 课程编号="123456">
+        <成绩>
+          <学号>171250640</学号>
+          <得分>60</得分>
+        </成绩>
+      </课程成绩>
+    </deleteResponse>
+  </S:Body>
+</S:Envelope>
+
+REQUEST:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <op>searchInfo</op>
+  </S:Header>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <学号>171250640</学号>
+  </S:Body>
+</S:Envelope>
+
+RESPONSE:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body xmlns="http://jw.nju.edu.cn/schema" xmlns:ns2="http://www.nju.edu.cn/schema">
+    <ns2:个人信息 学号="171250640">
+      <个人信息 姓名="付圣铭" 性别="男" 电话="12345678901"/>
+      <课程成绩列表/>
+    </ns2:个人信息>
+  </S:Body>
+</S:Envelope>
+

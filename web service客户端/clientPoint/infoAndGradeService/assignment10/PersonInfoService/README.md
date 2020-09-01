@@ -1,0 +1,25 @@
+# 第十次作业——PersonInfoService
+
+## 概述
+
+1.PersonInfoService服务为作业8中设计的学生个人信息管理服务，wsdl部分的内容即为StudentInfoService.wsdl以及schemas目录下的xsd文件。
+2. lib与web为idea的webservice框架自动生成的，可用于后期的tomcat部署
+3. 通过使用jdk自带的wsimport工具，根据wsdl文件生成服务的java代码，主要代码均在src目录下。src/cn/....以下的内容为服务的具体代码，src目录下的ServicePublisher类和TestService类分别负责服务的发布与测试
+
+## 业务实现
+
+主要业务即为对学生信息的增删改查操作
+
+由于本服务采取的是多个端口分开设计和部署，所以CRUD四个操作对应了四个业务实现类，即
+1. StudentInfoManagementService_addStudentInfoEndpointImpl
+2. StudentInfoManagementService_deleteStudentInfoEndpointImpl
+3. StudentInfoManagementService_modifyStudentInfoEndpointImpl
+4. StudentInfoManagementService_searchStudentInfoEndpointImpl
+
+以上四个服务实现类
+通过以上四个类分开实现对应的服务，且通过Endpoint在同一个进程中发布四个子服务，即开启了四个线程，所以数据的共享即可通过内存变量来实现。具体的数据存储和增删改查操作都封装在DataUtil类中。
+
+在处理业务前，需对输入参数进行校验操作，该项操作均封装在Validator类中。简单的学号校验即为字符串长度比较；复杂的学生类型校验，则通过JAXB的带schema校验的marshal来完成。
+
+业务代码均较为简单，可查看具体代码。
+

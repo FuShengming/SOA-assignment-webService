@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.nju.edu.cn/schema"
+		xmlns:nju="http://www.nju.edu.cn/schema"
+		elementFormDefault="qualified">
+
+	<simpleType name="院系类型">
+		<restriction base="string">
+			<enumeration value="软件学院"></enumeration>
+			<enumeration value="商学院"></enumeration>
+			<enumeration value="文学院"></enumeration>
+			<enumeration value="外国语学院"></enumeration>
+			<enumeration value="计算机科学与技术系"></enumeration>
+			<enumeration value="电子学院"></enumeration>
+			<enumeration value="物理学院"></enumeration>
+			<enumeration value="数学院"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="行政部门类型">
+		<restriction base="string">
+			<enumeration value="教务处"></enumeration>
+			<enumeration value="学工处"></enumeration>
+			<enumeration value="团委"></enumeration>
+			<enumeration value="党委"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<complexType name="部门列表">
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<element name="院系" type="nju:院系类型" minOccurs="0" maxOccurs="unbounded"></element>
+			<element name="行政部门" type="nju:行政部门类型" minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+	<element name="所属部门" type="nju:部门列表"></element>
+
+</schema>

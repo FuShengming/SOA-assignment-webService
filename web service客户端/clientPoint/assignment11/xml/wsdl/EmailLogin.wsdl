@@ -1,0 +1,72 @@
+<definitions
+        xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+        xmlns:tns = "http://jw.nju.edu.cn/wsdl"
+        xmlns:xs = "http://www.w3.org/2001/XMLSchema"
+        xmlns:authority="http://www.nju.edu.cn/security/schema"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:fault="http://jw.nju.edu.cn/wsdl/fault"
+        xmlns:jw="http://jw.nju.edu.cn/schema"
+        xmlns:nju="http://www.nju.edu.cn/schema"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        targetNamespace = "http://jw.nju.edu.cn/wsdl">
+    <types>
+        <xs:schema targetNamespace="http://www.nju.edu.cn/schema" xmlns:nju="http://www.nju.edu.cn/schema">
+            <xs:include schemaLocation="../xmlSchema/LoginService/Login.xsd"/>
+        </xs:schema>
+        <xs:schema targetNamespace="http://jw.nju.edu.cn/wsdl/fault" xmlns:fault="http://jw.nju.edu.cn/wsdl/fault">
+            <xs:include schemaLocation="../xmlSchema/LoginService/Fault.xsd"/>
+        </xs:schema>
+    </types>
+    <message name="EmailAuthenticationInfo">
+        <part name="EmailAuthenticationInfo" element="nju:EmailAuthenticationInfo"/>
+    </message>
+    <message name="EmailAuthenticationResponse">
+        <part name="EmailAuthenticationResult" element="nju:EmailAuthenticationResult"/>
+    </message>
+
+
+    <message name="InvalidDataFault">
+        <part name="InvalidDataFaultElement" element="fault:InvalidDataFaultEle"/>
+    </message>
+    <message name="EmailPwdFault">
+        <part name="PwdFaultElement" element="fault:EmailPwdFaultEle"/>
+    </message>
+    <message name="NotNjuFault">
+        <part name="NotNjuFaultElement" element="fault:NotNjuFaultEle"/>
+    </message>
+    <portType name="LoginPort">
+        <operation name="EmailAuthentication" >
+            <input message="tns:EmailAuthenticationInfo" wsam:Action="login/EmailAuthenticationInfo"/>
+            <output message="tns:EmailAuthenticationResponse" wsam:Action="login/EmailAuthenticationResponse"/>
+            <fault name="EmailPwdFault" message="tns:EmailPwdFault" wsam:Action="login/EmailPwdFault"/>
+            <fault name="NotNjuFault" message="tns:NotNjuFault" wsam:Action="login/NotNjuFault"/>
+        </operation>
+    </portType>
+
+    <binding name="LoginBinding" type="tns:LoginPort">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+
+        <operation name="EmailAuthentication">
+            <soap:operation soapAction="login/EmailAuthentication"/>
+            <input>
+                <soap:body use="literal" />
+            </input>
+            <output>
+                <soap:body use="literal" />
+            </output>
+
+            <fault name="EmailPwdFault">
+                <soap:fault name="EmailPwdFault" use="literal" />
+            </fault>
+            <fault name="NotNjuFault">
+                <soap:fault name="NotNjuFault" use="literal" />
+            </fault>
+        </operation>
+
+    </binding>
+    <service name="LoginService">
+        <port name="LoginPort" binding="tns:LoginBinding">
+            <soap:address location="http://127.0.0.1:8080/ws/login" />
+        </port>
+    </service>
+</definitions>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
+
+    <endpoint
+            name='searchPersonInfoService'
+            implementation='cn.edu.nju.jw.wsdl.StudentInfoManagementService_searchStudentInfoEndpointImpl'
+            url-pattern='/services/PersonInfoService/search'/>
+    <endpoint
+            name='addPersonInfoService'
+            implementation='cn.edu.nju.jw.wsdl.StudentInfoManagementService_addStudentInfoEndpointImpl'
+            url-pattern='/services/PersonInfoService/add'/>
+    <endpoint
+            name='modifyPersonInfoService'
+            implementation='cn.edu.nju.jw.wsdl.StudentInfoManagementService_modifyStudentInfoEndpointImpl'
+            url-pattern='/services/PersonInfoService/modify'/>
+    <endpoint
+            name='deletePersonInfoService'
+            implementation='cn.edu.nju.jw.wsdl.StudentInfoManagementService_deleteStudentInfoEndpointImpl'
+            url-pattern='/services/PersonInfoService/delete'/>
+</endpoints>

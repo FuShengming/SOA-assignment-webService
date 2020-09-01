@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.nju.edu.cn/schema"
+		xmlns:nju="http://www.nju.edu.cn/schema"
+		elementFormDefault="qualified">
+	<include schemaLocation="Department.xsd"/>
+
+	<element name="个人信息" type="nju:个人信息类型"></element>
+
+	<complexType name="个人信息类型">
+		<all minOccurs="1" maxOccurs="1">
+			<element name="单位" type="nju:部门列表" minOccurs="0"></element>
+		</all>
+		<attribute name="姓名" type="string"></attribute>
+		<attribute name="年龄" type="nonNegativeInteger"></attribute>
+		<attribute name="性别" type="nju:性别类型"></attribute>
+		<attribute name="电话" type="nonNegativeInteger"></attribute>
+	</complexType>
+
+	<simpleType name="性别类型">
+		<restriction base="string">
+			<enumeration value="男"></enumeration>
+			<enumeration value="女"></enumeration>
+		</restriction>
+	</simpleType>
+
+
+
+</schema>

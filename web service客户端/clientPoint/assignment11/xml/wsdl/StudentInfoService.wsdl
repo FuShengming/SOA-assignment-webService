@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://jw.nju.edu.cn/wsdl"
+                  xmlns:tns="http://jw.nju.edu.cn/wsdl"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:jwc="http://jw.nju.edu.cn/schema"
+                  xmlns:nju="http://www.nju.edu.cn/schema"
+                  xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <wsdl:types>
+        <xs:schema
+                xmlns="http://www.w3.org/2001/XMLSchema"
+                targetNamespace="http://jw.nju.edu.cn/schema"
+                xmlns:tns="http://jw.nju.edu.cn/schema">
+            <include schemaLocation="../xmlSchema/StudentService/Student.xsd"/>
+            <element name="faultReason">
+                <simpleType>
+                    <restriction base="string">
+                    </restriction>
+                </simpleType>
+            </element>
+        </xs:schema>
+<!--        <xs:schema-->
+<!--                xmlns="http://www.w3.org/2001/XMLSchema"-->
+<!--                targetNamespace="http://www.nju.edu.cn/schema"-->
+<!--                xmlns:tns="http://jw.nju.edu.cn/schema">-->
+<!--            <include schemaLocation="../xmlSchema/StudentService/PersonInfo.xsd"/>-->
+<!--            <element name="faultReason">-->
+<!--                <simpleType>-->
+<!--                    <restriction base="string">-->
+<!--                    </restriction>-->
+<!--                </simpleType>-->
+<!--            </element>-->
+<!--        </xs:schema>-->
+    </wsdl:types>
+
+    <wsdl:message name="searchRequestMessage">
+        <wsdl:part name="studentNumber" element="jwc:学号"/>
+    </wsdl:message>
+    <wsdl:message name="searchResponseMessage">
+        <wsdl:part name="studentInfo" element="jwc:学生"/>
+    </wsdl:message>
+    <wsdl:message name="addRequestMessage">
+        <wsdl:part name="studentInfo" element="jwc:学生"/>
+    </wsdl:message>
+    <wsdl:message name="addResponseMessage">
+        <wsdl:part name="studentInfo" element="jwc:学生"/>
+    </wsdl:message>
+    <wsdl:message name="modifyRequestMessage">
+        <wsdl:part name="studentInfo" element="jwc:学生"/>
+    </wsdl:message>
+    <wsdl:message name="modifyResponseMessage">
+        <wsdl:part name="studentInfo" element="jwc:学生"/>
+    </wsdl:message>
+    <wsdl:message name="deleteRequestMessage">
+        <wsdl:part name="studentNumber" element="jwc:学号"/>
+    </wsdl:message>
+    <wsdl:message name="deleteResponseMessage">
+        <wsdl:part name="studentInfo" element="jwc:学生"/>
+    </wsdl:message>
+
+    <wsdl:message name="invalidRequestFault">
+        <wsdl:part name="invalidRequestFault" element="jwc:faultReason"/>
+    </wsdl:message>
+    <wsdl:message name="cannotFindFault">
+        <wsdl:part name="cannotFindFault" element="jwc:faultReason"/>
+    </wsdl:message>
+    <wsdl:message name="alreadyExistFault">
+        <wsdl:part name="alreadyExistFault" element="jwc:faultReason"/>
+    </wsdl:message>
+
+    <wsdl:portType name="searchStudentInfoInterface">
+        <wsdl:operation name="searchStudentInfoOperation">
+            <wsdl:documentation>
+                输入需要查询的学号，返回完整的学生信息
+                若查询成功则返回课程成绩，失败则返回相应的fault信息
+            </wsdl:documentation>
+            <wsdl:input message="tns:searchRequestMessage"/>
+            <wsdl:output message="tns:searchResponseMessage"/>
+            <wsdl:fault name="invalidRequestFault" message="tns:invalidRequestFault"/>
+            <wsdl:fault name="cannotFindFault" message="tns:cannotFindFault"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:portType name="modifyStudentInfoInterface">
+        <wsdl:operation name="modifyStudentInfoOperation">
+            <wsdl:documentation>
+                输入学生的个人信息，完成修改
+                若修改成功则返回修改后的信息，失败则返回相应的fault信息
+            </wsdl:documentation>
+            <wsdl:input message="tns:modifyRequestMessage"/>
+            <wsdl:output message="tns:modifyResponseMessage"/>
+            <wsdl:fault name="invalidRequestFault" message="tns:invalidRequestFault"/>
+            <wsdl:fault name="cannotFindFault" message="tns:cannotFindFault"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:portType name="addStudentInfoInterface">
+        <wsdl:operation name="addStudentInfoOperation">
+            <wsdl:documentation>
+                在这里完成需要增添的学生信息
+                若插入成功则返回插入的成绩信息；若已存在待插入的信息，则返回相应fault；请求信息有误则返回相应的fault
+            </wsdl:documentation>
+            <wsdl:input message="tns:addRequestMessage"/>
+            <wsdl:output message="tns:addResponseMessage"/>
+            <wsdl:fault name="invalidRequestFault" message="tns:invalidRequestFault"/>
+            <wsdl:fault name="alreadyExistFault" message="tns:alreadyExistFault"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:portType name="deleteStudentInfoInterface">
+        <wsdl:operation name="deleteStudentInfoOperation">
+            <wsdl:documentation>
+                输入需要删除的学生的个人信息，完成删除
+                若删除成功则返回被删除的成绩信息；若未查询到待删除的信息，则返回相应fault；请求信息有误则返回相应的fault
+            </wsdl:documentation>
+            <wsdl:input message="tns:deleteRequestMessage"/>
+            <wsdl:output message="tns:deleteResponseMessage"/>
+            <wsdl:fault name="invalidRequestFault" message="tns:invalidRequestFault"/>
+            <wsdl:fault name="cannotFindFault" message="tns:cannotFindFault"/>
+        </wsdl:operation>
+
+    </wsdl:portType>
+
+    <wsdl:binding name="searchStudentInfoOperationBinding" type="tns:searchStudentInfoInterface">
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="searchStudentInfoOperation">
+            <wsdlsoap:operation soapAction="searchStudentGrade"/>
+            <wsdl:input>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="invalidRequestFault">
+                <wsdlsoap:fault name="invalidRequestFault" use="literal"/>
+            </wsdl:fault>
+            <wsdl:fault name="cannotFindFault">
+                <wsdlsoap:fault name="cannotFindFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="addStudentInfoOperationBinding" type="tns:addStudentInfoInterface">
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="addStudentInfoOperation">
+            <wsdlsoap:operation soapAction="addStudentGrade"/>
+            <wsdl:input>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="invalidRequestFault">
+                <wsdlsoap:fault name="invalidRequestFault" use="literal"/>
+            </wsdl:fault>
+            <wsdl:fault name="alreadyExistFault">
+                <wsdlsoap:fault name="alreadyExistFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="modifyStudentInfoOperationBinding" type="tns:modifyStudentInfoInterface">
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="modifyStudentInfoOperation">
+            <wsdlsoap:operation soapAction="modifyStudentGrade"/>
+            <wsdl:input>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="invalidRequestFault">
+                <wsdlsoap:fault name="invalidRequestFault" use="literal"/>
+            </wsdl:fault>
+            <wsdl:fault name="cannotFindFault">
+                <wsdlsoap:fault name="cannotFindFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="deleteStudentInfoOperationBinding" type="tns:deleteStudentInfoInterface">
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="deleteStudentInfoOperation">
+            <wsdlsoap:operation soapAction="deleteStudentGrade"/>
+            <wsdl:input>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <wsdlsoap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="invalidRequestFault">
+                <wsdlsoap:fault name="invalidRequestFault" use="literal"/>
+            </wsdl:fault>
+            <wsdl:fault name="cannotFindFault">
+                <wsdlsoap:fault name="cannotFindFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="StudentInfoManagementService">
+        <wsdl:port binding="tns:searchStudentInfoOperationBinding" name="searchStudentInfoEndpoint">
+            <wsdlsoap:address location="http://localhost:8089/searchStudentInfo"/>
+        </wsdl:port>
+        <wsdl:port binding="tns:addStudentInfoOperationBinding" name="addStudentInfoEndpoint">
+            <wsdlsoap:address location="http://localhost:8089/addStudentInfo"/>
+        </wsdl:port>
+        <wsdl:port binding="tns:modifyStudentInfoOperationBinding" name="modifyStudentInfoEndpoint">
+            <wsdlsoap:address location="http://localhost:8089/modifyStudentInfo"/>
+        </wsdl:port>
+        <wsdl:port binding="tns:deleteStudentInfoOperationBinding" name="deleteStudentInfoEndpoint">
+            <wsdlsoap:address location="http://localhost:8089/deleteStudentInfo"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

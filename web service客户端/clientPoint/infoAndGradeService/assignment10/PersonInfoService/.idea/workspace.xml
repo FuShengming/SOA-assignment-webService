@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47cea19b-bd5e-4d6e-a98d-0ed11c7d9a4b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1cpwZZuWwwgnvZleN77vEHaInDs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../SOA/test10" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zyk\Desktop\SOA\assign10\SOA\assignment10\PersonInfoService" />
+      <recent name="C:\Users\zyk\Desktop\SOA\assign10\SOA\assignment10\PersonInfoService\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ServicePublisher">
+    <configuration name="ServicePublisher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ServicePublisher" />
+      <module name="PersonInfoService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestService" />
+      <module name="PersonInfoService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServicePublisher" />
+        <item itemvalue="Application.TestService" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47cea19b-bd5e-4d6e-a98d-0ed11c7d9a4b" name="Default Changelist" comment="" />
+      <created>1591238898985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591238898985</updated>
+      <workItem from="1591238901897" duration="7168000" />
+      <workItem from="1591257543509" duration="14566000" />
+      <workItem from="1591320477349" duration="7199000" />
+      <workItem from="1591360125554" duration="140000" />
+      <workItem from="1592391786975" duration="5211000" />
+      <workItem from="1592452226648" duration="7698000" />
+      <workItem from="1592483269666" duration="9000" />
+      <workItem from="1592483379823" duration="1828000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="618" y="347" key="#com.intellij.ws.actions.GenerateWsdlFromJavaDialog" timestamp="1591260076765">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="347" key="#com.intellij.ws.actions.GenerateWsdlFromJavaDialog/0.0.1536.824@0.0.1536.824" timestamp="1591260076765" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1591320520864">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591320520864" />
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom" timestamp="1591347950917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591347950917" />
+    <state width="1493" height="666" key="GridCell.Tab.0.center" timestamp="1591347950917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591347950917" />
+    <state width="1493" height="666" key="GridCell.Tab.0.left" timestamp="1591347950917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591347950917" />
+    <state width="1493" height="666" key="GridCell.Tab.0.right" timestamp="1591347950917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591347950917" />
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1591245048301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1591245048301" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591244684142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591244684142" />
+  </component>
+</project>
